@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion Formulario</title>
+</head>
+<body>
+    <form action="" method="get">
+
+        <!--Actividad 1-->
+        <label>Sólo 3 letras:
+            <input type="text" pattern="^[A-Za-z]{3}$">
+        </label> <br> <br>
+
+        <!--Actividad 2-->
+        <label> Introduce una contraseña de 6 o más: 
+            <input type="password" pattern=".{6,}">
+        </label><br> <br>
+
+        <!--Actividad 3-->
+        <label> Letras minusculas, 1 número opcional de 2 digitos al final, tamaño entre 5 y 12: 
+            <input type="text" pattern="^[a-z]{3,10}[0-9]{2,9}$">
+        </label><br> <br>
+
+        <!--Actividad 4-->
+        <label> Contraseña con letras mayúsculas, minúsculas, números y ! ? - tamaño 8-12: 
+            <input type="password" pattern="[A-Za-z0-9\!\?\-]{8,12}">
+        </label><br> <br>
+
+        <!--Actividad 5-->
+        <label> Nombre usuario tamaño 5-40 solo letras y números: 
+            <input type="text" pattern="[A-Za-z0-9]{5,40}">
+        </label><br> <br>
+
+        <!--Actividad 6-->
+        <label> Modelo de coche (solo A1, A3, A4 y A15): 
+            <input type="text" pattern="|A1|A3|A4|A15">
+        </label><br> <br>
+
+        <!--Actividad 7-->
+        <label> Patente de tres números: 
+            <input type="text" pattern="^.{3}[0-9]{3}$">
+        </label><br> <br>
+
+        <!--Actividad 8 -->
+        <label> Direccion web : 
+            <input type="text" pattern="(http//|https//).+">
+        </label><br> <br>
+
+        <!--Actividad 9-->
+        <label> Número entero positivo: 
+            <input type="text" pattern="[0-9]+">
+        </label><br> <br>
+
+        <!--Actividad 10-->
+        <label> Correo electronico: 
+            <input type="email" pattern=".+@.+(.com|.es)">
+        </label><br> <br>
+
+        <!--Actividad 11-->
+        <label> Código postal: 
+            <input type="text" pattern="[0-9]{5}">
+        </label><br> <br>
+
+        <!--Actividad 12-->
+        <label> Fecha DD/MM/AAAA: 
+            <input type="text" pattern="([0-1][0-9])|(3[0-1])/(0[0-9])|(1[0-2])/[0-9]{4}">
+        </label><br> <br>
+
+        <!--Actividad 13-->
+        <label> Número de teléfono: 
+            <input type="text" pattern="[0-9]{9}">
+        </label><br> <br>
+
+        <!--Actividad 14-->
+        <label> Contraseña (min8, 1 mayúscula y 1 número): 
+            <input type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}">
+        </label><br> <br>
+
+        <!--Actividad 15-->
+        <label> Tarjeta de crédito (XXXX-XXXX-XXXX-XXXX): 
+            <input type="text" pattern="([0-9]{4}-){3}[0-9]{4}">
+        </label><br> <br>
+
+        <!--Actividad 16-->
+        <label> Código de país (2mayusculas): 
+            <input type="text" pattern="[A-Z]{2}">
+        </label><br> <br>
+
+        <!--Actividad 17-->
+        <label> Hora (HH:MM): 
+            <input type="text" pattern="([0-1][0-9])|(2[0-4]):[0-5][0-9]">
+        </label><br> <br>
+
+        <!--Actividad 18-->
+        <label> Código producto (XX-0000): 
+            <input type="text" pattern="[A-Za-z]{2}-[0-9]{4}">
+        </label><br> <br>
+
+        <!--Actividad 19-->
+        <label> Código descuento (6letrasynumeros): 
+            <input type="text" pattern="[A-Za-z0-9]{6}">
+        </label><br> <br>
+        <input type="submit" value="enviar">
+
+    </form>
+</body>
+</html>
