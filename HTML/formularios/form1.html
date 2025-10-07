@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+
+<body>
+    <h1>Formularios en HTML5</h1>
+    <form action="" method="GET">
+        <label for="nom">Tu nombre: (*)</label>
+        <br>
+        <input type="text" name="nombre" id="nom" required>
+        <br>
+<br>
+        <label for="email">Correo electrónico: (*)</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="usuario@dominio.com" required>
+        <br>
+<br>
+        <label for="contraseña">Contraseña: (*)</label>
+        <br>
+        <input type="password" name="password" id="contraseña" required>
+        <br>
+<br>
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <br>
+        <input type="date" name="fechaNacimiento" id="nacimiento" value="2023-10-04">
+        <br>
+<br>
+        <label for="hora">¿Que hora es?</label>
+        <input type="time" name="horaFormulario" id="hora">
+        <br>
+<br>
+        <label for="mes">¿En que mes estamos?</label>
+        <input type="month" name="mesFormulario" id="mes">
+        <br>
+<br>
+        <label for="personaje">Selecciona tu personaje preferido:</label> <br>
+        <input type="radio" name="personajeFav" id="personaje" value="FlashGordon"> Flash FlashGordon <br>
+        <input type="radio" name="personajeFav" id="personaje" value="MingElDespiadado"> Ming, el despiadado <br>
+        <input type="radio" name="personajeFav" id="personaje" value="PrincesaAurora" checked> La Princesa
+        PrincesaAurora <br>
+        <input type="radio" name="personajeFav" id="personaje" value="PrincipeVultan"> Principe Vultan <br>
+        <input type="radio" name="personajeFav" id="personaje" value="DaleArden"> Dale Arden
+        <br>
+<br>
+        <label for="personajeF">Selecciona tu personaje favorito:</label> <br>
+        <select name="personajeFavorito" id="personajeF">
+            <option value="FlashGordon" selected> Flash FlashGordon </option>
+            <option value="MingElDespiadado"> Ming, el despiadado </option>
+            <option value="PrincesaAurora"> La Princesa PrincesaAurora </option>
+            <option value="PrincipeVultan"> Principe Vultan </option>
+            <option value="DaleArden"> Dale Arden </option>
+        </select>
+        <br>
+<br>
+        <label for="nComics">¿Cuántos cómics de Flash Gordon lees a la semana?</label> <br>
+        <input type="range" name="nComics" id="nComics" min="0" max="10" value="2">
+        <br>
+<br>
+        <label for="colorMayas">¿Color ideal de las mayas de Flash Gordon?</label> <br>
+        <input type="color" name="colorMayas" id="colorMayas" value="#FF0000">
+        <br>
+<br>
+        <label for="nPaginas">¿Cuántas páginas de comics de Flash Gordon te lees cada día?</label> <br>
+        <input type="number" name="numeroPaginas" id="nPaginas" value="100">
+        <br>
+<br>
+        <label for="descuentos">Descuentos:</label> <br>
+        <label for="familiaNumerosa">Familia Numerosa</label>
+        <input type="checkbox" id="familiaNumerosa" name="descuentos" value="Familia Numerosa"><br>
+        <label for="pensionista">Pensionista</label>
+        <input type="checkbox" id="pensionista" name="descuentos" value="Pensionista"><br>
+        <label for="necesidadesEspeciales">Necesidades especiales</label>
+        <input type="checkbox" id="necesidadesEspeciales" name="descuentos" value="Necesidades especiales">
+        <br>
+<br>
+        <label for="archivo">Elija el archivo</label>
+        <input type="file" name="archivo" id="archivo">
+        <br>
+<br>
+        <progress id="progresoFormulario" value="75" max="100"></progress>
+        <br>
+<br>
+        <button type="submit">Enviar los datos</button>
+        <button type="reset">Resetear</button>
+
+
+
+    </form>
+</body>
+
+</html>
