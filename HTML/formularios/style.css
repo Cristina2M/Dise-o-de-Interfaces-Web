@@ -1,0 +1,74 @@
+h1, h2 {
+    text-align: center;
+}
+
+legend{
+    background-color: beige;
+    border: 1px solid black;
+    color: black;
+}
+
+.datos-personales{
+    background-color: #63594D;
+    color: white;
+}
+
+.grupo-campos {
+    display: grid;
+    gap: 20px 15px; 
+    margin-bottom: 20px;
+    align-items: end; 
+    width: 500px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column; 
+}
+
+.fila-cuatro {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.fila-tres {
+    grid-template-columns: 1fr auto auto 2fr; 
+}
+
+
+.fila-dos {
+    grid-template-columns: 4fr 1fr;
+}
+
+
+.forma-acceso{
+    background-color: #B18272;
+}
+
+.subopciones {
+    margin-left: 1.5em;
+}
+
+.documentos{
+    background-color: #C2B291;
+}
+
+.cert_academ{
+    margin-right: 150px;
+}
+
+.personaliza{
+    background-color: #D6E4C3;
+}
+
+.otros-datos{
+    background-color: #EAE3D1;
+}
+
+textarea{
+    width: 230px;
+    height: 70px;
+}
+
+.botones{
+    margin-left: 50px;
+}
