@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="contenedor-formulario">
+        <h1>HOJA DE INSCRIPCIÓN</h1>
+        <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+
+        <form action="" method="POST">
+
+            <fieldset class="datos-personales">
+                <legend>Datos Personales</legend>
+
+                <div class="grupo-campos fila-cuatro">
+                    <div class="campo">
+                        <label for="nombre">Nombre (*):</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="apellidos">Apellidos (*):</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="dni">DNI (*):</label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="contrasena">Contraseña (*):</label>
+                        <input type="password" id="contrasena" name="contraseña" required
+                            pattern="(?=.*[A-Z])(?=.*\d).{8,}">
+                    </div>
+                </div>
+
+                <div class="grupo-campos fila-tres">
+                    <div class="campo"><label for="local">Localidad de Nacimiento</label><input type="text" id="local"
+                            name="localidad"></div>
+
+                    <div class="campo campo-provincia">
+                        <label for="prov">Provincia:</label>
+                        <select id="prov" name="provincia">
+                            <optgroup label="Andalucía">
+                                <option value="Huelva" selected>Huelva</option>
+                                <option value="Sevilla">Sevilla</option>
+                                <option value="Cádiz">Cádiz</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Jaén">Jaén</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Málaga">Málaga</option>
+                                <option value="Almería">Almería</option>
+                            </optgroup>
+                            <optgroup label="Castilla-León">
+                                <option value="Ávila">Ávila</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="León">León</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Zamora">Zamora</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="campo"><label for="f_nacimiento">Fecha de Nacimiento</label><input type="date"
+                            id="f_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa"></div>
+                </div>
+
+                <div class="grupo-campos fila-dos">
+                    <div class="campo"><label for="direc">Dirección (*)</label><input type="text" id="direc"
+                            name="direccion" required></div>
+
+                    <div class="campo"><label for="cdg_postal">Código Postal:</label><input type="text" id="cdg_postal"
+                            name="codigo_postal" pattern="[0-9]{5}"></div>
+                </div>
+
+                <div class="grupo-campos fila-dos">
+                    <div class="campo"><label for="email">Email (*)</label><input type="email" id="email" name="email"
+                            required placeholder="usuario@gmail.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></div>
+
+                    <div class="campo"><label for="telef">Teléfono (*):</label><input type="tel" id="telef"
+                            name="telefono" required pattern="[0-9]{9}"></div>
+                </div>
+            </fieldset>
+
+
+
+
+
+            <fieldset class="forma-acceso">
+                <legend>Forma de Acceso</legend>
+                <input type="radio" id="directo" name="acceso" value="directo">
+                <label for="directo">Directo</label><br>
+
+                <div class="subopciones">
+                    <input type="radio" id="bachillerato" name="acceso" value="bachillerato">
+                    <label for="bachillerato">Bachillerato Log Modalidad</label>
+                    <input type="text" id="acceso_bach" name="acceso_bach"><br>
+
+                    <input type="radio" id="experimental" name="acceso" value="experimental">
+                    <label for="experimental">Experimental</label><br>
+
+                    <input type="radio" id="cou" name="acceso" value="cou">
+                    <label for="cou">COU Opción</label>
+                    <input type="text" id="acceso_cou" name="acceso_cou"><br>
+
+                    <input type="radio" id="fp2" name="acceso" value="fp2">
+                    <label for="fp2">FP2</label><br>
+
+                    <input type="radio" id="otros_acceso" name="acceso" value="otros">
+                    <label for="otros_acceso">Otros (especifique)</label>
+                    <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"><br>
+                </div>
+
+                <input type="radio" id="prueba_libre" name="acceso" value="prueba_libre">
+                <label for="prueba_libre">Prueba Libre</label>
+            </fieldset>
+
+
+
+
+
+            <fieldset class="documentos">
+                <legend>Documentos Adjuntos</legend>
+                <input type="checkbox" id="fotocopia_dni" name="doc_dni">
+                <label for="fotocopia_dni" class="cert_academ">Fotocopia DNI</label>
+
+                <input type="checkbox" id="cert_academico" name="doc_academico">
+                <label for="cert_academico">Certificado Académico</label>
+
+                <br>
+
+                <input type="checkbox" id="otros_docs" name="doc_otros">
+                <label for="otros_docs">Otros documentos (especifique)</label>
+                <input type="text" id="otros_docs_esp" name="otros_docs_esp">
+
+                <br>
+
+                <label for="arch">Adjuntar documentos (puedes subir más de un documento)</label>
+                <input type="file" id="arch" name="archivos" multiple>
+            </fieldset>
+
+
+
+
+
+
+            <fieldset class="personaliza">
+                <legend>Personaliza</legend>
+
+                <p>
+                    <label for="cdg_personalizado">Código Personalizado:</label>
+                    <input type="text" id="cdg_personalizado" name="codigo_personalizado"
+                        pattern="[A-Za-z]{3}-[0-9]{4}">
+                </p>
+
+                <p>
+                    <label for="grupo_curso">Grupo del curso:</label>
+                    <input type="text" id="grupo_curso" name="grupo_curso" pattern="^(A|B|AA|BB|ABA)$">
+                </p>
+
+                <p>
+                    <label for="idioma_cert">Idioma Certificado:</label>
+                    <select id="idioma_cert" name="idioma_certificado">
+                        <option value="ingles">Inglés</option>
+                        <option value="frances">Francés</option>
+                        <option value="aleman">Alemán</option>
+                        <option value="portugues">Portugués</option>
+                        <option value="italiano">Italiano</option>
+                        <option value="japones">Japonés</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="cert_idiomas">Certificación en idiomas:</label>
+                    <input type="text" id="cert_idiomas" name="certificacion_idiomas" pattern="^(A|B|C)(1|2)$">
+                </p>
+            </fieldset>
+
+
+
+
+
+            <fieldset class="otros-datos">
+                <legend>Otros datos</legend>
+                <label for="comentario">Indique cualquier otra cosa a tener en cuenta:</label>
+                <br>
+                <textarea id="comentario" name="comentario" placeholder="Déjanos tu comentario"></textarea>
+            </fieldset>
+
+            <p class="botones">
+                <button type="submit">Enviar Solicitud</button>
+                <button type="reset">Resetear</button>
+            </p>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
