@@ -1,0 +1,32 @@
+.control-link:visited {
+    color: green;
+}
+
+.punto-titulo {
+    color: black;
+    position: relative;
+    padding-left: 0;
+    transition: all 0.3s;
+}
+
+
+.punto-titulo::before {
+    content: "›"; 
+    color: transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.punto-contenido:target .punto-titulo {
+    color: green; 
+    padding-left: 15px; 
+}
+
+.punto-contenido:target .punto-titulo::before {
+    color: green;
+    opacity: 1;
+}
