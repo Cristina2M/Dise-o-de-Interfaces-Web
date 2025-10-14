@@ -1,0 +1,19 @@
+.borde-solido {
+    border: 3px solid blue;
+}
+
+
+.borde-punteado {
+    border: 5px dotted green;
+}
+
+
+.borde-rayas {
+    border: 4px dashed purple;
+}
+
+
+.borde-mixto {
+    border: 3px double red;
+    border-top: 3px double orange;
+}
