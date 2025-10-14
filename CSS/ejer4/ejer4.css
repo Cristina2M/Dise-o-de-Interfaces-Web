@@ -1,0 +1,36 @@
+section {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.contenedor-1 {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+}
+
+.contenedor-2 {
+    width: 300px;
+    height: 100px;
+    background-color: lightgreen;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.contenedor-3 {
+    width: 150px;
+    height: 200px;
+    background-color: lightcoral;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.parrafo-largo {
+    width: 500px;
+    margin-bottom: 5px;
+}
