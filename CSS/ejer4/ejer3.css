@@ -1,0 +1,56 @@
+.linea1, .linea2{
+    display: flex
+}
+.figura {
+    background-color: #444444;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px 0 30px;
+}
+
+
+.A,
+.B,
+.C,
+.D,
+.E {
+    width: 140px;
+    height: 70px;
+}
+
+
+.F {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+.A {
+    border-radius: 0 0 50px 0 / 0 0 60px 0;
+}
+
+.B {
+    border-radius: 0 0 40px 0 / 0 0 20px 0;
+}
+
+.C {
+    border-radius: 0 0 20px 0 / 0 0 40px 0 ;
+}
+
+.D { 
+    border-radius: 20px 80px 20px 70px / 20px 70px 20px 80px;
+}
+
+.E {
+    border-radius: 20px 10px 20px 10px / 10px 20px 10px 20px;
+}
+
+.F {
+    border-radius: 50%;
+}
