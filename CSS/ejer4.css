@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contenedor-cursores {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.caja:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+.pointer {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.help {
+    background-color: #6f42c1;
+    cursor: help;
+}
+
+.wait {
+    background-color: #ffc107;
+    cursor: wait; 
+}
+
+.progress {
+    background-color: #20c997;
+    cursor: progress;
+}
+
+.text {
+    background-color: #17a2b8;
+    cursor: text;
+}
+
+.move {
+    background-color: #dc3545;
+    cursor: move; 
+}
+
+.crosshair {
+    background-color: #343a40;
+    cursor: crosshair;
+}
+
+.not-allowed {
+    background-color: #6c757d;
+    cursor: not-allowed; 
+}
+
+.ns-resize {
+    background-color: #fd7e14;
+    cursor: ns-resize; 
+}
+
+.grab {
+    background-color: #e83e8c;
+    cursor: grab; 
+}
