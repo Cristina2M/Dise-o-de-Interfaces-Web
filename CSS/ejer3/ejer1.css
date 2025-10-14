@@ -1,0 +1,24 @@
+input{
+    background-color: lightgreen;
+}
+
+input:disabled{
+    background-color: lightcoral;
+}
+
+input:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+input:focus{
+    background-color: lightblue;
+}
+
+input[type="radio"]:checked + label{
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label{
+    background-color: yellow;
+    font-weight: bold;
+}
