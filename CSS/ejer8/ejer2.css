@@ -1,0 +1,81 @@
+div {
+    border: 5px solid black;
+    height: 200px;
+    width: 600px;
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+
+.sombra {
+    color: blue;
+    text-shadow: 5px 5px 10px rgb(101, 101, 101)
+}
+
+
+.legible {
+    background-color: aqua;
+    color: white;
+    text-shadow: 2px 2px 10px blue
+}
+
+.relieve {
+    background-color: gainsboro;
+    color: gainsboro;
+    text-shadow: 0px 1px 0px black,
+        -1px -1px 0px white
+}
+
+.hundido {
+    background-color: gainsboro;
+    color: gainsboro;
+    text-shadow: 0px -1px 0px black,
+        1px 1px 0px white
+}
+
+.contorno {
+    background-color: aquamarine;
+    color: aquamarine;
+    text-shadow: 1px 0px 0px black,
+        0px -1px 0px black,
+        -1px 0px 0px black,
+        0px 1px 0px black;
+}
+
+.neon1 {
+    text-shadow: 2px 2px 10px #ea7a8d,
+        -2px -2px 10px #ea7a8d;
+}
+
+.neon2 {
+    text-shadow:
+    0px 0px 5px #fff,
+    0px 0px 10px #fff,
+    0px 0px 15px #0073e6,
+    0px 0px 20px #0073e6,
+    0px 0px 25px #0073e6,
+    0px 0px 30px #0073e6,
+    0px 0px 35px #0073e6;
+}
+
+.pixelart {
+    color: rgb(170, 189, 207);
+    text-shadow:
+    1px 1px 0 #566565,
+    2px 2px 0 #a4e3e5, 
+    3px 3px 0 #566565, 
+    4px 4px 1px #a4e3e5;
+}
+
+.fuego {
+        text-shadow: 2px -1px 3px rgb(255, 255, 219),
+        0px -5px 10px yellow,
+        0px -7px 10px rgb(255, 149, 0),
+        0px -9px 10px rgb(255, 119, 0),
+        0px -11px 10px rgb(255, 0, 0),
+        0px -13px 10px rgb(116, 53, 2);
+        color: gray;
+        
+}
