@@ -1,0 +1,72 @@
+div>div {
+    height: 100px;
+    width: 300px;
+    font-size: 25px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0px auto;
+    background-color: gainsboro;
+}
+
+.cont {
+    display: flex
+}
+
+.A {
+    box-shadow: -5px -5px 0px 0px red;
+}
+
+.B {
+    box-shadow: -5px -5px 5px 0px blue;
+}
+
+.C {
+    box-shadow: -5px -5px 0px 5px green;
+}
+
+
+.D {
+    box-shadow: -5px -5px 5px 5px lightblue;
+}
+
+
+.E {
+    box-shadow: 0px 0px 5px 5px pink;
+}
+
+
+.F {
+    box-shadow: 0px 0px 10px 10px yellow;
+}
+
+
+.G {
+    box-shadow: inset -5px -5px 0px 0px purple;
+}
+
+.H {
+    box-shadow: inset -5px -5px 5px 0px aqua;
+}
+
+
+.I {
+    box-shadow: inset -5px -5px 0px 5px palevioletred;
+
+}
+
+
+.J {
+    box-shadow: inset -5px -5px 5px 5px lightgreen;
+
+}
+
+
+.K {
+    box-shadow: inset 0px 0px 5px 5px gray;
+
+}
+
+
+.L {
+    box-shadow: inset 0px 0px 10px 10px gray;
+}
