@@ -1,0 +1,106 @@
+/* Estilos del Primer Párrafo */
+/* --------------------------------- */
+.cont1{
+    background-color: rgb(255, 220, 238);
+    border: 1px solid black;
+    width: 50%;
+}
+.parrafo1 {
+    /* Aplica la fuente "Dancing Script" */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+}
+
+
+/* Estilos del Segundo Párrafo*/
+/* ----------------------------------- */
+.cont2 {
+    /* Define un contenedor con ancho fijo para forzar el desbordamiento */
+    width: 350px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(255, 220, 238);
+}
+
+.parrafo2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+
+    white-space: nowrap;      /* Ajustado en una sola línea */
+    overflow: hidden;         /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis;  /* Muestra puntos suspensivos (...) */
+    margin: 0; 
+}
+
+
+/* Estilos del Tercer Párrafo */
+/* ------------------------------- */
+.parrafo3 {
+    /* Sangría de primera línea de 20 píxeles */
+    text-indent: 20px;
+    /* Justifica el texto */
+    text-align: justify;
+    /* Aplica un subrayado */
+    text-decoration: underline;
+    /* Aumenta el espaciado entre letras a 2px */
+    letter-spacing: 2px;
+    /* Aumenta el espaciado entre palabras a 4px */
+    word-spacing: 4px;
+    /* Convierte el texto en mayúsculas */
+    text-transform: uppercase;
+    /* Ajusta la altura de línea a 1.5 */
+    line-height: 1.5;
+    /* Alinea verticalmente al centro. Para bloques de texto, line-height 
+       es lo que da la sensación de centrado vertical dentro de la línea. */
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* Estilos de las Fórmulas */
+/* ---------------------------- */
+.formula {
+    /* Aplica la fuente "Bungee Shade" */
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+/* Estilo para Subíndice (H₂O) */
+.sub {
+    vertical-align: sub;
+    font-size: 0.6em; /* Más pequeño para el subíndice */
+}
+
+/* Estilo para Superíndice (X²) */
+.sup {
+    vertical-align: super;
+    font-size: 0.6em; /* Más pequeño para el superíndice */
+}
+
+
+/* Estilos y efectos del Botón */
+/* ------------------------- */
+.mi-boton {
+    /* Estilos base */
+    background-color: #007BFF; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 30px auto; /* Centra el botón */
+    display: block; /* Para que margin funcione */
+}
+
+/* Estado :hover (Cuando el cursor está sobre el botón) */
+.mi-boton:hover {
+    cursor: pointer;
+    background-color: #6b00b3; 
+}
+
+/* Estado :active (Cuando se pulsa el botón) */
+.mi-boton:active {
+    background-color: #006403; 
+}
