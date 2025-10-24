@@ -1,0 +1,125 @@
+
+h1{
+    background: linear-gradient(rgb(66, 0, 66), purple, pink);
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+}
+
+
+
+.cont1{
+    width: 800px;
+    height: 150px;
+    background: linear-gradient(to right, black, blue, yellow, green, red);
+}
+
+
+.cont2{
+    width: 800px;
+    height: 150px;
+    background: linear-gradient(blue 0% , blue 10%, 
+                                yellow 10%, yellow 20%, 
+                                red 20%, red 30%,
+                                blue 30% , blue 40%, 
+                                yellow 40%, yellow 50%, 
+                                red 50%, red 60%,
+                                blue 60% , blue 70%, 
+                                yellow 70%, yellow 80%, 
+                                red 80%, red 90%,
+                                blue 90% , blue 100%);
+}
+
+
+.cont3{
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(ellipse, yellow, red, black);
+}
+
+
+.cont4{
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(ellipse, yellow 0%, yellow 50%, red 55%, black 80%);
+}
+
+
+.cont5{
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle, yellow 0%, yellow 60%, red 65%, black 90%);
+}
+
+
+.cont6{
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle at left, yellow 0%, yellow 60%, red 65%, black);
+}
+
+
+.cont7{
+    width: 800px;
+    height: 150px;
+    background: radial-gradient(circle, blue 0%, blue 1%, purple 15%, red 35%, orange 70%, yellow);
+}
+
+
+.cont8{
+    width: 800px;
+    height: 150px;
+    background: radial-gradient(35% 85%, blue 1%, red 40%, yellow 80%);
+}
+
+
+
+.cont9{
+    width: 800px;
+    height: 150px;
+    background: radial-gradient(circle, blue 1%, red 40%, yellow);
+}
+
+
+
+.cont10{
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle, rgb(232, 127, 144) 0% , rgb(232, 127, 144) 10%, 
+                                darkred 10%, darkred 20%, 
+                                red 20%, red 30%,
+                                rgb(232, 127, 144) 30% , rgb(232, 127, 144) 40%, 
+                                darkred 40%, darkred 50%, 
+                                red 50%, red 60%,
+                                rgb(232, 127, 144) 60% , rgb(232, 127, 144) 70%, 
+                                darkred 70%, darkred 80%, 
+                                red 80%, red 90%,
+                                rgb(232, 127, 144) 90% , rgb(232, 127, 144) 100%);
+}
+
+
+.cont11{
+    width: 400px;
+    height: 200px;
+    background: conic-gradient(
+    from -90deg at 50% 0%, /* Empieza a -90 grados (arriba) en el centro superior */
+    #6BEBFF,
+    darkblue
+  );
+}
+
+
+.cont12{
+    width: 400px;
+    height: 200px;
+    background: conic-gradient(yellow, red 10%,
+                                blue 10%, yellow, red 30%,
+                                blue 30%, yellow, red 50%,
+                                blue 50%, yellow, red 70%,
+                                blue 70%, yellow, red 90%,
+                                blue 90%, yellow );
+}
+
+
+
+
