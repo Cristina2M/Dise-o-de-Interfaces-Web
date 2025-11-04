@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #1a1a1a;
+  background: #fafafa;
+  min-height: 150vh;
+}
+
+.topbar {
+  background: #f3e9df;
+  border-bottom: 1px solid #e6d8cf;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+  margin-top: 8px;
+}
+
+.nav * {
+  cursor: pointer;
+}
+
+.brand-tag {
+  background: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Mantener Iliberis rojo en hover/focus/active */
+.brand-tag:focus,
+.brand-tag:active {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.brand-tag:hover {
+  background: #6b21a8;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu>li {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 200ms ease;
+}
+
+.menu>li>.toplink {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  padding: 8px 12px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Morado al pasar por encima del li */
+.menu>li:hover {
+  background: #6b21a8;
+}
+
+.menu>li:hover>.toplink {
+  color: #fff;
+}
+
+/* Verde cuando se despliega por clic */
+/* retiradas reglas para modo click (.open) y :active para simplificar */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 6px;
+  display: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+/* Mostrar submenú por hover (sin click) */
+.menu>li:hover>.submenu {
+  display: block;
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.submenu li {
+  display: block;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  position: relative;
+}
+
+/* Soporta elementos del submenú como texto o como enlaces */
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Morado al pasar por encima de los elementos del submenú */
+.submenu li:hover,
+.submenu a:hover {
+  background: #6b21a8;
+  color: #fff;
+}
+
+/* Mostrar segundo submenú al pasar por encima del primer submenú */
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+}
+
+.submenu li:hover>.submenu {
+  display: block;
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 800;
+  color: #1a1a1a;
+  border: 2px solid #b7e1bf;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.logo span {
+  color: #2ca55a;
+}
+
+.hero {
+  position: relative;
+  min-height: 360px;
+  text-align: center;
+  margin-top: 50px;
+  /* separación con el nav */
+  display: flex;
+  align-items: center;
+  /* centra verticalmente el contenido */
+  justify-content: center;
+  /* centra horizontalmente el contenido */
+  color: #ffffff;
+  background: #222 center / cover no-repeat url("img/bosque.jpg");
+  background-attachment: fixed;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+  padding: 32px 20px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0 0 16px;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  background: #e74c3c;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.cta:hover {
+  background: #d84333;
+}
+
+.footer {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px 32px;
+  color: #666;
+}
+
