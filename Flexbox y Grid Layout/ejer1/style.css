@@ -1,0 +1,115 @@
+/* Base y Reset (sin cambios) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f8ff;
+    color: #1a1a1a;
+}
+
+/* --- Encabezado (Header y Navbar) --- (sin cambios) */
+
+header {
+    background-color: #1c2e4a;
+    padding: 15px 5vw; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav div {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav div:hover {
+    color: #4b68ff; 
+}
+
+nav div:last-child {
+    margin-right: 300px;
+}
+
+/* --- Sección Principal (Hero) --- (sin cambios en estructura) */
+
+main section {
+    min-height: calc(100vh - 58px); 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 60px 5vw;
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+
+/* Contenedor del texto (tamaño pequeño) */
+main section > div:first-child {
+    flex-basis: 350px; 
+    max-width: 350px; 
+    margin-right: 30px; 
+}
+
+h1 {
+    /* Texto pequeño: 3.5vw */
+    font-size: 3.5vw; 
+    min-font-size: 30px; 
+    
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+p {
+    /* Texto pequeño: 16px */
+    font-size: 16px; 
+    
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Botón "Aprender ahora" (sin cambios) */
+button {
+    background-color: #4b68ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2e4be8; 
+}
+
+/* Contenedor de la imagen */
+main section > div:last-child {
+    /* CAMBIO CLAVE: Tamaño de la imagen fijado a 800px */
+    flex-basis: 800px; 
+    max-width: 800px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen del birrete (se adapta al 100% de su contenedor de 800px) */
+main section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

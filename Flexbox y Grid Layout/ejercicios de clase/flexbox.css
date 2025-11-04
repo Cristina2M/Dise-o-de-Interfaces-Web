@@ -1,0 +1,60 @@
+section {
+    width: auto;
+    height: 1000px;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    /* display: inline-flex; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    /* align-items: baseline; */
+
+    /* align-content: flex-start; */
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.cajas {
+    border: 4px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 10px;   
+}
+
+.red {
+    background-color: red;
+    /* flex-grow: 3; */
+    order: 1;
+    align-self: center;
+}
+
+.blue {
+    background-color: blue;
+    /* flex-grow: 2; */
+    /* height: 150px;
+    line-height: 150px; */
+}
+
+.yellow {
+    background-color: yellow;
+    /* flex-basis: 200px; */
+    order: 3;
+}
+
+.green {
+    background-color: green;
+    /* flex-grow: 1; */
+    /* height: 300px;
+    line-height: 300px; */
+    order: -1;
+    align-self: flex-end;
+}
