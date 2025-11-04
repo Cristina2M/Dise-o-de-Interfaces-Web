@@ -1,4 +1,18 @@
-/* Base y Reset (sin cambios) */
+@font-face {
+    font-family: 'Raleway';
+    src: url('./font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./font/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700; 
+    font-style: normal;
+}
+
+/* Base y Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +20,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #f5f8ff;
     color: #1a1a1a;
 }
@@ -38,7 +52,7 @@ nav div:hover {
 }
 
 nav div:last-child {
-    margin-right: 300px;
+    margin-right: 200px;
 }
 
 /* --- Sección Principal (Hero) --- (sin cambios en estructura) */
@@ -63,8 +77,6 @@ main section > div:first-child {
 h1 {
     /* Texto pequeño: 3.5vw */
     font-size: 3.5vw; 
-    min-font-size: 30px; 
-    
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 20px;
@@ -101,7 +113,7 @@ button:hover {
 main section > div:last-child {
     /* CAMBIO CLAVE: Tamaño de la imagen fijado a 800px */
     flex-basis: 800px; 
-    max-width: 800px; 
+    max-width: 700px; 
     display: flex;
     justify-content: center;
     align-items: center;
