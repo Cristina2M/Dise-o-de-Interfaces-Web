@@ -1,0 +1,531 @@
+/* ==================================== */
+/* VARIABLES GLOBALES Y RESET          */
+/* ==================================== */
+:root {
+    /* 1. Colores empleados */
+    --color-white: #fff;
+    --color-dark-green: #008000;
+    --color-hover-green: #006400;
+    /* Verde más oscuro para hover */
+    --color-light-gray-border: #ccc;
+    --color-feature-blue: #13a3db;
+    --color-very-light-gray: #f6f6f6;
+    --color-footer-bg: #2c2a2a;
+    --color-footer-text: #c0bcbc;
+    --color-card-icon-blue: #107ba7;
+    --color-card-shadow: #ccc9c9;
+    --color-cta-button: #37b81e;
+    --color-cta-hover: #358d24;
+    /* Verde más oscuro para hover de CTA */
+    --color-form-input-bg: #000;
+    --color-dark-text: #444;
+
+    /* 2. Tamaños de letra */
+    --font-size-h1: 2.8rem;
+    --font-size-contact-icon: 1.20rem;
+    --font-size-check: 0.9rem;
+    --font-size-label: 0.90rem;
+    --font-size-form-h2: 1.4rem;
+    --font-size-submit: 1rem;
+    --font-size-feature-icon: 2.5rem;
+    --font-size-col-h3: 1.1rem;
+    --font-size-card-p: 0.9rem;
+    --font-size-card-icon: 1.5rem;
+
+    /* 3. Gradientes */
+    --gradient-hero: linear-gradient(to left top, rgba(55, 185, 30, 0.83), rgba(25, 59, 240, 0.83));
+    --gradient-cta: linear-gradient(to left top, rgba(16, 123, 167, 0.8), rgba(16, 123, 167, 0.8));
+}
+
+/* Reset básico y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-dark-text);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* ==================================== */
+/* 1. HEADER / HERO SECTION      */
+/* ==================================== */
+
+.hero-section {
+    /* IMAGEN DE FONDO SUPERIOR DESDE CARPETA IMAGES/ */
+    background: var(--gradient-hero), url('images/fondo_superior.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+}
+
+/* --- Top Bar (Flexbox) --- */
+/* --- Top Bar (Flexbox) --- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    /* CLAVE: Alinea verticalmente el logo (izquierda) y el contact-social (derecha) */
+    align-items: center;
+    padding: 10px 5%;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 0;
+    /* Flexbox para alinear la imagen del logo verticalmente dentro de su propio contenedor */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.contact-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-social a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+#infoContacto {
+    padding-right: 0;
+}
+
+#infoContacto i {
+    color: var(--color-white);
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* --- Hero Content (Flexbox) --- */
+.hero-content-wrapper {
+    display: flex;
+    padding: 30px 5% 0;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 2;
+    color: var(--color-white);
+}
+
+.text-content h1 {
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    font-size: var(--font-size-h1);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Check List (Mini Flexbox) */
+.check-list {
+    list-style: none;
+}
+
+.check-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.check-list i {
+    color: var(--color-dark-green); /* El tick seguirá siendo verde */
+    margin-right: 10px;
+    font-size: var(--font-size-check); /* Tamaño del tick */
+    padding-top: 3px;
+
+    /* **CLAVE: Convertir el icono en un círculo blanco con borde** */
+    display: flex; /* Usar flex para centrar el icono dentro del círculo */
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Tamaño del círculo */
+    height: 20px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: var(--color-white); /* Fondo blanco */
+    border: 1px solid var(--color-white); /* Borde blanco (sutil) */
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1); /* Una pequeña sombra para destacarlo */
+    flex-shrink: 0; /* Evita que el círculo se encoja si el texto es muy largo */
+}
+
+/* --- Formulario --- */
+/* --- Formulario --- */
+.form-container {
+    flex: 1;
+    /* CAMBIO 1: Fondo semi-transparente (rgba) */
+    background: rgba(0, 0, 0, 0.7);
+    /* Gris oscuro con 85% de opacidad */
+    color: var(--color-white);
+    padding: 25px;
+    border-radius: 0;
+}
+
+#formulario-h2 {
+    font-size: var(--font-size-form-h2);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    font-size: var(--font-size-label);
+    margin-top: 15px;
+}
+
+.form-container input:not([type="submit"]) {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-light-gray-border);
+    /* CAMBIO 2: Fondo de input a blanco */
+    background: var(--color-white);
+    /* CAMBIO 3: Color del texto dentro del input a negro */
+    color: #333;
+    border-radius: 0;
+}
+
+/* Botón de Formulario */
+.submit-button {
+    width: 100%;
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size-submit);
+    font-weight: 700;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+/* EFECTO HOVER EN BOTÓN DE FORMULARIO */
+.submit-button:hover {
+    background-color: var(--color-hover-green);
+}
+
+/* Ajuste de estilo para el aviso legal */
+.form-disclaimer {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 15px;
+    opacity: 0.9;
+    line-height: 1.3;
+}
+
+/* **NUEVA REGLA: Estilo para el enlace de la Política de privacidad** */
+.form-disclaimer a {
+    color: var(--color-white);
+    /* Color blanco para el enlace */
+    text-decoration: none;
+    /* Eliminar el subrayado */
+    font-weight: bold;
+    /* Hacer el texto negrita para destacarlo */
+}
+
+/* ==================================== */
+/* 2. FEATURES SECTION (Flexbox)    */
+/* ==================================== */
+.features-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.features-wrapper {
+    display: flex;
+    /* Ajuste para espaciado más compacto y balanceado */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.feature-col {
+    flex-basis: 23%;
+}
+
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px; /* Incrementado de 80px a 90px */
+    height: 130px; /* Incrementado de 80px a 90px */
+    border-radius: 50%;
+    border: 1px solid var(--color-feature-blue);
+    margin-bottom: 15px;
+}
+
+.feature-col i {
+    font-size: var(--font-size-feature-icon);
+    color: var(--color-feature-blue);
+}
+
+.feature-col h3 {
+    font-size: var(--font-size-col-h3);
+    font-weight: 600;
+    color: #444;
+    /* Ajuste para acercar el texto al icono */
+    margin-top: 5px;
+}
+
+/* ==================================== */
+/* 3. BENEFITS / VIDEO SECTION (Flexbox) */
+/* ==================================== */
+
+.video-benefits-section {
+    background-color: var(--color-very-light-gray);
+    padding: 60px 5%;
+}
+
+.video-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.video-section-wrapper .text {
+    /* Ajuste para balancear el ancho con el video */
+    flex-basis: 50%;
+}
+
+.video-section-wrapper .video-placeholder {
+    /* Ajuste para balancear el ancho con el texto */
+    flex-basis: 50%;
+}
+
+/* Estilo para el video (asegura que ocupe todo el contenedor) */
+.video-placeholder video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-section-wrapper h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+/* Botón de Descarga */
+.download-button {
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    padding: 10px 140px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* EFECTO HOVER EN BOTÓN DE DESCARGA */
+.download-button:hover {
+    background-color: var(--color-hover-green);
+}
+
+/* ==================================== */
+/* 4. STAFF SECTION (Flexbox)       */
+/* ==================================== */
+
+.staff-section {
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.staff-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.staff-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.staff-card {
+    flex-basis: calc(25% - 15px);
+    background: var(--color-white);
+    box-shadow: 0 4px 8px var(--color-card-shadow);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.staff-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.staff-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+}
+
+.staff-card p {
+    font-size: var(--font-size-card-p);
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: var(--color-card-icon-blue);
+    margin: 0 8px;
+    font-size: var(--font-size-card-icon);
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--color-feature-blue);
+}
+
+/* ==================================== */
+/* 5. CALL TO ACTION SECTION (Flexbox)  */
+/* ==================================== */
+
+.call-to-action-section {
+    /* IMAGEN DE FONDO INFERIOR DESDE CARPETA IMAGES/ */
+    background: var(--gradient-cta), url('images/fondo_inferior.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    text-align: center;
+    padding: 40px 5%;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-content p {
+    margin-bottom: 20px;
+}
+
+/* Botón de CTA */
+.cta-button {
+    background-color: var(--color-cta-button);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* EFECTO HOVER EN BOTÓN CTA */
+.cta-button:hover {
+    background-color: var(--color-cta-hover);
+}
+
+/* ==================================== */
+/* 6. FOOTER (Flexbox)         */
+/* ==================================== */
+
+footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.footer-nav a {
+    color: var(--color-footer-text);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--color-white);
+}
+
+/* ==================================== */
+/* RESPONSIVE       */
+/* ==================================== */
+@media (max-width: 900px) {
+    .hero-content-wrapper {
+        flex-direction: column;
+    }
+
+    .form-container {
+        margin-top: 30px;
+    }
+
+    .features-wrapper {
+        flex-wrap: wrap;
+        padding: 50px 5%;
+        /* Ajuste de padding en móvil */
+    }
+
+    .feature-col {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+
+    .staff-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .staff-card {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+
+    .video-section-wrapper {
+        flex-direction: column;
+    }
+
+    .video-section-wrapper .video-placeholder,
+    .video-section-wrapper .text {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .staff-card {
+        flex-basis: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-bottom: 10px;
+    }
+}

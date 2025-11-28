@@ -69,7 +69,8 @@ section.img-24 img {
 
 /* 4. ESTILOS DE CONTENIDO: Uso del DIV como bloque de texto */
 
-section.img-20 p, section.img-20 h3 {
+section.img-20 p,
+section.img-20 h3 {
     margin-left: 80px;
 }
 
@@ -84,4 +85,86 @@ p {
 h3 {
     margin-bottom: 5px;
     text-align: left;
+}
+
+
+
+
+
+/* Responsive */
+/* Tamaño Tablet */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    section:first-child>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    section:first-child img {
+        width: calc(50% - 10px);
+        height: 150px;
+        object-fit: cover;
+    }
+
+    section.img-21 img,
+    section.img-24 img {
+        margin-right: 20px;
+    }
+
+}
+
+/* Tamaño Móvil */
+@media screen and (max-width: 500px) {
+    section:first-child>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    section:first-child img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+
+    section.img-21,
+    section.img-20,
+    section.img-24 {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section.img-21>div,
+    section.img-20>div,
+    section.img-24>div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    section.img-21 img,
+    section.img-24 img,
+    section.img-20 img {
+        margin: 0px auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    section.img-20 p,
+    section.img-20 h3 {
+        margin-left: 0px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+
+
 }
