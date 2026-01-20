@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fuente Raleway desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./img/bad-dog-studio-logo.png" alt="Bad Dog Studio"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page"" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sitios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sitios.html#ultimos-proyectos">Últimos Proyectos</a></li>
+                            <li><a class="dropdown-item" href="sitios.html#single-page">Sitios <i>Single Page</i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="sitios.html#multi-page">Sitios <i>Multi Page</i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comencemos.html">Comencemos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">¿Interesado?</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="pt-5 bg-color">
+        <section id="ultimos-proyectos" class="pb-5">
+            <!-- <h2>Carrusel</h2> -->
+            <div class="text-center">
+                <h1>Sitios web 100% Responsive</h1>
+                <p class="fs-5">Desarrollo sitios de una sola y de múltiples páginas</p>
+            </div>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/work-slide-1.jpg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/work-slide-2.jpg" class="d-block w-100" alt="Trabajo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/work-slide-3.jpg" class="d-block w-100" alt="Trabajo 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/work-slide-4.jpg" class="d-block w-100" alt="Trabajo 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/work-slide-5.png" class="d-block w-100" alt="Trabajo 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/work-slide-6.png" class="d-block w-100" alt="Trabajo 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+
+
+        <section id="single-page" class="min-vh-100 bg-img1 bg-hero-image">
+            <!-- <h2>Single-page</h2> -->
+            <article class="min-vh-100 d-flex align-items-center bg-alpha-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6"></div>
+
+                        <div class="col-12 col-lg-6">
+                            <span class="btn btn-success mb-5"><strong>Desde 400</strong> <small>€</small></span>
+
+                            <h2 class="fw-light">Sitio de una sola página</h2>
+                            <p class="small mb-5">El precio puede ser más bajo (o más alto) dependiendo de los
+                                requisitos de su proyecto</p>
+
+                            <p class="mb-5">Una <strong>sola página</strong> o <strong>página de destino</strong> es un
+                                sitio web que
+                                consta de una página. Perfecto para presentar a tu empresa, organización, producto o
+                                servicio de una manera hermosa y moderna en Internet.</p>
+
+                            <a href="contactos.html" class="fs-5 fw-bold" style="color: var(--link-color);">
+                                Solicite una cotización ahora <i class="bi bi-chevron-right"></i>
+                            </a>
+
+                            <div class="row mt-4 pt-3 border-top">
+                                <div class="col-6">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> Sitio web de una sola página
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> 100% Responsivo</li>
+                                        <li><i class="bi bi-check-lg"></i> Diseño personalizado</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> Corrección de estilo</li>
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> Edición de imágenes</li>
+                                        <li><i class="bi bi-check-lg"></i> Soporte</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section id="multi-page" class="min-vh-100 bg-img2 bg-hero-image">
+            <!-- <h2>Multi-page</h2> -->
+            <article class="min-vh-100 d-flex align-items-center bg-alpha-color">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-12 col-lg-6">
+                            <span class="btn btn-success mb-5"><strong>Desde 400</strong> <small>€</small></span>
+
+                            <h2 class="fw-light">Sitio de una sola página</h2>
+                            <p class="small mb-5">El precio puede ser más bajo (o más alto) dependiendo de los
+                                requisitos de su proyecto</p>
+
+                            <p class="mb-5">Una <strong>sola página</strong> o <strong>página de destino</strong> es un
+                                sitio web que
+                                consta de una página. Perfecto para presentar a tu empresa, organización, producto o
+                                servicio de una manera hermosa y moderna en Internet.</p>
+
+                            <a href="contactos.html" class="fs-5 fw-bold" style="color: var(--link-color);">
+                                Solicite una cotización ahora <i class="bi bi-chevron-right"></i>
+                            </a>
+
+                            <div class="row mt-4 pt-3 border-top">
+                                <div class="col-6">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> Sitio web de una sola página
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> 100% Responsivo</li>
+                                        <li><i class="bi bi-check-lg"></i> Diseño personalizado</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> Corrección de estilo</li>
+                                        <li class="mb-3"><i class="bi bi-check-lg"></i> Edición de imágenes</li>
+                                        <li><i class="bi bi-check-lg"></i> Soporte</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </article>
+            </div>
+            </article>
+
+
+        </section>
+    </main>
+
+
+
+    <footer class="bg-dark">
+        <div class="container text-center">
+            <nav class="d-flex justify-content-evenly">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+                <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="https://messenger.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+                <a href="https://whatsapp.com/send?phone=numero" target:="_blank"><i
+                        class="bi bi-whatsapp fs-3"></i></a>
+            </nav>
+
+            <small class="text-white">
+                &copy; 2026 Cristina Moreno. Hecho con fines educativos
+            </small>
+        </div>
+    </footer>
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
