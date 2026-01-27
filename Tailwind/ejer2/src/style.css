@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-
 @layer components {
-    
+  .card {
+    @apply bg-red-500 grid place-content-center rounded-lg text-white font-bold border-2 border-red-800 text-4xl;
+  }
+
+  .carta {
+    @apply bg-amber-700 grid place-content-center rounded text-white font-bold border border-amber-950 text-xl shadow shadow-gray-800 p-5;
+  }
 }
+
+
